@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rowdies:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body{
+  font-family: 'Poppins', sans-serif !important;
+}
 
 .swiper {
   width: 100%;
@@ -31,11 +36,13 @@
   z-index: 10000;
 }
 
-.swiper-button-prev, .swiper-button-next{
-    color: #fff !important;
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff !important;
 }
 
-.swiper-button-prev:after, .swiper-button-next:after {
-    font-size: 20px !important;
-    font-weight: 700;
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 20px !important;
+  font-weight: 700;
 }

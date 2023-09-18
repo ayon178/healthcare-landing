@@ -50,7 +50,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="bg-primary py-3">
+    <div className="bg-primary py-3 px-2">
       <div className="container mx-auto flex flex-row justify-between">
         <Link href="/#" className="font-semibold text-2xl text-primaryText">
           LOGO

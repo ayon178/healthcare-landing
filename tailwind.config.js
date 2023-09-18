@@ -14,7 +14,7 @@ module.exports = {
       },
       colors: {
         primary: '#5A9BD5',
-        secondary: '#ED7D31',
+        secondary: '#1f75ff',
         tertiary: '#A5A5A5',
         primaryText: '#FFFFFF',
         secondaryText: '#000000',
@@ -29,7 +29,7 @@ module.exports = {
           700: '#374151',
           800: '#252f3f',
         },
-      }
+      },
     },
   },
   plugins: [],
