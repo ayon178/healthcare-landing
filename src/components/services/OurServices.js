@@ -47,7 +47,7 @@ const OurServices = () => {
         scrollTrigger: {
           trigger: `.service-card-${index}`,
           start: 'top center',
-          end: 'bottom center',
+          end: ' bottom center',
           scrub: 1,
         },
         defaults: { duration: 1, ease: 'power2.out' },

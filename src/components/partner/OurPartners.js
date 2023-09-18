@@ -4,6 +4,7 @@ import React, { useEffect } from 'react'
 import { BiLayer } from 'react-icons/bi'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 import buildingImage from '../../assets/building.jpg'
 import OurPartnersCard from './OurPartnersCard'
 
@@ -40,14 +41,14 @@ const cardData = [
 
 const OurPartners = () => {
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger)
+    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
     cardData.forEach((_, index) => {
       const cardAnimationLeftToRight = gsap.timeline({
         scrollTrigger: {
           trigger: `.partner-card-${index}`,
           start: 'top center',
-          end: 'bottom center',
+          end: ' bottom center',
           scrub: 1,
         },
         defaults: { duration: 1, ease: 'power2.out' },
@@ -58,24 +59,24 @@ const OurPartners = () => {
         { opacity: 0, x: '-100%' },
         { opacity: 1, x: '0%' }
       )
+    })
 
-      cardData.forEach((_, index) => {
-        const cardAnimationLeftToRight = gsap.timeline({
-          scrollTrigger: {
-            trigger: `.partner-card-area-2-${index}`,
-            start: 'top center',
-            end: 'bottom center',
-            scrub: 1,
-          },
-          defaults: { duration: 1, ease: 'power2.out' },
-        })
-
-        cardAnimationLeftToRight.fromTo(
-          `.partner-card-area-2-${index}`,
-          { opacity: 0, x: '100%' },
-          { opacity: 1, x: '0%' }
-        )
+    cardData.forEach((_, index) => {
+      const cardAnimationLeftToRightArea2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: `.partner-card-area-2-${index}`,
+          start: 'center bottom',
+          end: ' bottom center',
+          scrub: 1,
+        },
+        defaults: { duration: 1, ease: 'power2.out' },
       })
+
+      cardAnimationLeftToRightArea2.fromTo(
+        `.partner-card-area-2-${index}`,
+        { opacity: 0, x: '100%' },
+        { opacity: 1, x: '0%' }
+      )
     })
   }, [])
 
