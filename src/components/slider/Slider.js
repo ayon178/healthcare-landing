@@ -50,11 +50,17 @@ export default function SwiperAutoSlider() {
         }
       )
 
-      // Run GSAP animation for the text (fade up)
+      // Run GSAP animation for the slider header text (fade down)
+      gsap.fromTo(
+        `.slide-${activeSlideIndex} .slide-header`,
+        { opacity: 0, y: -80 },
+        { opacity: 1, y: 0, duration: 1, delay: 0.3, ease: Power2.easeInOut }
+      )
+      // Run GSAP animation for the slider paragraph text (fade up)
       gsap.fromTo(
         `.slide-${activeSlideIndex} .slide-text`,
         { opacity: 0, y: 80 },
-        { opacity: 1, y: 0, duration: 1, delay: 0.3, ease: Power2.easeInOut }
+        { opacity: 1, y: 0, duration: 1, delay: 0.8, ease: Power2.easeInOut }
       )
     })
   }, [])
@@ -81,13 +87,22 @@ export default function SwiperAutoSlider() {
             <div
               className={`slide-${index} relative h-full flex items-center justify-center`}
               style={{
-                backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url(${item.image.src})`,
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(${item.image.src})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
               }}
             >
-              <div className="text-white text-3xl slide-text">{item.text}</div>
+              <div className="flex flex-col items-center justify-center">
+                <div className="text-white text-3xl slide-header font-bold">
+                  {item.text}
+                </div>
+                <p className='text-white mt-10 w-[95%] md:w-[60%] slide-text text-center'>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                  cum voluptatum minus atque nisi rem tempore ipsum maiores
+                  officiis placeat!
+                </p>
+              </div>
             </div>
           </SwiperSlide>
         ))}
