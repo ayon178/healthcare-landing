@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const OurPartnersCard = ({ data }) => {
   return (
-    <div className="w-full mx-auto max-w-sm p-0 bg-slate-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="w-full mx-auto max-w-sm p-0 pb-4 bg-slate-100 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div className="relative" style={{ paddingBottom: '65%' }}>
         <Image
           src={data.image}
