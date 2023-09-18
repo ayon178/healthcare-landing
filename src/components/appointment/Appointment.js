@@ -14,79 +14,79 @@ const Appointment = () => {
         </p>
 
         <form className="mt-16">
-          <div class="grid md:grid-cols-3 md:gap-6">
-            <div class="mb-6">
+          <div className="grid md:grid-cols-3 md:gap-6">
+            <div className="mb-6">
               <label
-                for="name"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                htmlFor="name"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
                 Your Name
               </label>
               <input
                 type="email"
                 id="email"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="John Doe"
                 required
               />
             </div>
-            <div class="mb-6">
+            <div className="mb-6">
               <label
-                for="email"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                htmlFor="email"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
                 Your email
               </label>
               <input
                 type="email"
                 id="email"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="name@gmail.com"
                 required
               />
             </div>
-            <div class="mb-6">
+            <div className="mb-6">
               <label
-                for="phone"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                htmlFor="phone"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
                 Your Phone
               </label>
               <input
                 type="number"
                 id="phone"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required
                 placeholder="1234567890"
               />
             </div>
           </div>
 
-          <div class="grid md:grid-cols-3 md:gap-6">
-            <div class="mb-6">
+          <div className="grid md:grid-cols-3 md:gap-6">
+            <div className="mb-6">
               <label
-                for="date"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                htmlFor="date"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
                 Appointment Date
               </label>
               <input
                 type="date"
                 id="date"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required
               />
             </div>
-            <div class="mb-6">
+            <div className="mb-6">
               <label
-                for="depertment"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                htmlFor="depertment"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
                 Select Depertment
               </label>
               <select
                 id="depertment"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required
               >
                 <option value="1">Cardiology</option>
@@ -97,16 +97,16 @@ const Appointment = () => {
                 <option value="6">Urology</option>
               </select>
             </div>
-            <div class="mb-6">
+            <div className="mb-6">
               <label
-                for="doctor"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                htmlFor="doctor"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
                 Select Doctor
               </label>
               <select
                 id="doctor"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required
               >
                 <option value="1">John Doe</option>

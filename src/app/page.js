@@ -1,5 +1,3 @@
-
-
 import OurDoctors from '@/components/doctor/OurDoctors'
 import Galary from '@/components/galary/Galary'
 import OurPartners from '@/components/partner/OurPartners'
@@ -11,7 +9,6 @@ import { projects } from '../data'
 import Appointment from '@/components/appointment/Appointment'
 
 export default function Home() {
-
   return (
     <main>
       <Slider />
