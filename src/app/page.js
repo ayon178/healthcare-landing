@@ -1,3 +1,4 @@
+import OurPartners from '@/components/partner/OurPartners'
 import OurServices from '@/components/services/OurServices'
 import Slider from '@/components/slider/Slider'
 
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <Slider />
       <OurServices />
+      <OurPartners />
     </main>
   )
 }
